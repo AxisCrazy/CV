@@ -3,76 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AxisCrazy | Portfolio</title>
+    <title>Christian Herrera | AI & Data Science Engineer</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
-        body { background-color: #0f172a; color: #e2e8f0; scroll-behavior: smooth; }
-        .glass { background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.1); }
-        .gradient-text { background: linear-gradient(90deg, #38bdf8, #818cf8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        body { background-color: #0a0a0c; color: #e2e8f0; scroll-behavior: smooth; font-family: 'Inter', sans-serif; }
+        .glass { background: rgba(17, 24, 39, 0.8); backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.05); }
+        .accent-text { background: linear-gradient(90deg, #f97316, #fbbf24); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .oracle-red { color: #ff0000; } /* Un guiño sutil al color de Oracle */
+        .card-hover:hover { border-color: #f97316; transform: translateY(-5px); transition: all 0.3s ease; }
     </style>
 </head>
 <body>
 
-    <nav class="fixed w-full z-50 glass py-4 px-8 flex justify-between items-center">
-        <div class="text-xl font-bold gradient-text">AxisCrazy</div>
-        <div class="space-x-6 hidden md:block">
-            <a href="#ingenieria" class="hover:text-sky-400 transition">Ingeniería</a>
-            <a href="#sistemas" class="hover:text-sky-400 transition">Sistemas</a>
-            <a href="#creativo" class="hover:text-sky-400 transition">Diseño</a>
+    <nav class="fixed w-full z-50 glass py-4 px-8 flex justify-between items-center border-b border-white/5">
+        <div class="text-xl font-bold tracking-tighter">CH <span class="text-orange-500">|</span> <span class="font-light">Christian Herrera</span></div>
+        <div class="hidden md:flex space-x-8 text-xs font-medium uppercase tracking-widest">
+            <a href="#perfil" class="hover:text-orange-400 transition">Perfil</a>
+            <a href="#ia" class="hover:text-orange-400 transition">Ingeniería</a>
+            <a href="#sysadmin" class="hover:text-orange-400 transition">Infraestructura</a>
+            <a href="#skills" class="hover:text-orange-400 transition">Habilidades</a>
         </div>
     </nav>
 
-    <section class="h-screen flex flex-col justify-center items-center text-center px-4">
-        <h1 class="text-5xl md:text-7xl font-extrabold mb-4" data-aos="fade-down" data-aos-duration="1000">
-            Hola, soy <span class="gradient-text">AxisCrazy</span>
+    <section id="perfil" class="h-screen flex flex-col justify-center items-center text-center px-6">
+        <div class="mb-4 px-4 py-1 border border-orange-500/30 rounded-full text-xs text-orange-400 uppercase tracking-widest" data-aos="fade-down">
+            AI & Data Science Student
+        </div>
+        <h1 class="text-5xl md:text-7xl font-black mb-6" data-aos="zoom-out">
+            CHRISTIAN <span class="accent-text">HERRERA</span>
         </h1>
-        <p class="text-lg md:text-2xl text-slate-400 max-w-2xl" data-aos="fade-up" data-aos-delay="300">
-            Estudiante de IA y Ciencia de Datos. Apasionado por el despliegue de infraestructura y soluciones inteligentes.
+        <p class="text-slate-400 text-lg md:text-xl max-w-2xl leading-relaxed" data-aos="fade-up" data-aos-delay="400">
+            Especializado en el diseño de arquitecturas de datos, administración de sistemas Linux y despliegue de soluciones escalables mediante Docker.
         </p>
-        <div class="mt-10" data-aos="zoom-in" data-aos-delay="600">
-            <a href="#ingenieria" class="bg-sky-500 hover:bg-sky-600 text-white px-8 py-3 rounded-full font-bold transition">Ver Proyectos</a>
+        <div class="mt-12 flex flex-wrap justify-center gap-4" data-aos="fade-up" data-aos-delay="600">
+            <a href="mailto:christianvher.2k@gmail.com" class="bg-orange-600 hover:bg-orange-700 text-white px-8 py-3 rounded-md font-bold transition shadow-lg shadow-orange-900/20">Enviar Correo</a>
+            <a href="https://github.com/tu-usuario" class="border border-slate-700 hover:bg-slate-800 px-8 py-3 rounded-md font-bold transition">Ver GitHub (AxisCrazy)</a>
         </div>
     </section>
 
-    <section id="ingenieria" class="py-20 px-8 max-w-6xl mx-auto">
-        <h2 class="text-3xl font-bold mb-12 border-l-4 border-sky-500 pl-4" data-aos="fade-right">Ingeniería de Datos & IA</h2>
-        <div class="grid md:grid-cols-2 gap-8">
-            <div class="glass p-8 rounded-2xl hover:scale-105 transition duration-300" data-aos="fade-up">
-                <h3 class="text-2xl font-bold text-sky-400">BioTracker</h3>
-                <p class="mt-4 text-slate-400">Sistema de monitoreo científico con Computer Vision y modelos SQL/NoSQL para identificación de fauna.</p>
-                <div class="mt-4 flex gap-2">
-                    <span class="text-xs bg-slate-700 px-2 py-1 rounded">Python</span>
-                    <span class="text-xs bg-slate-700 px-2 py-1 rounded">NoSQL</span>
-                </div>
-            </div>
-            </div>
-    </section>
-
-    <section id="sistemas" class="py-20 bg-slate-900/50 px-8">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="text-3xl font-bold mb-12 border-l-4 border-indigo-500 pl-4 text-right" data-aos="fade-left">Infraestructura & Servidores</h2>
-            <div class="glass p-8 rounded-2xl border-indigo-500/20" data-aos="zoom-in-up">
-                <h3 class="text-xl font-semibold mb-4 text-indigo-400">Dell Home Server (Ubuntu)</h3>
-                <ul class="space-y-3 text-slate-300">
-                    <li>🚀 Orquestación de contenedores con <b>Docker Compose</b>.</li>
-                    <li>🌐 Redes privadas seguras vía <b>Tailscale</b> y Nginx.</li>
-                    <li>🎮 Gestión de servidores optimizados (Forge 1.20.1).</li>
+    <section id="ia" class="py-24 px-8 max-w-6xl mx-auto">
+        <h2 class="text-sm font-bold text-orange-500 mb-2 tracking-[0.2em] uppercase" data-aos="fade-right">01. Data Engineering & IA</h2>
+        <div class="grid md:grid-cols-2 gap-12 items-start">
+            <div data-aos="fade-up">
+                <h3 class="text-4xl font-bold mb-6">Proyecto BioTracker</h3>
+                <p class="text-slate-400 leading-relaxed mb-6">
+                    Sistema avanzado de monitoreo biológico enfocado en la identificación de fauna mediante **Computer Vision**. 
+                    He implementado modelos de datos híbridos utilizando **SQL (MariaDB) y NoSQL**, garantizando la integridad y disponibilidad de grandes volúmenes de datos científicos.
+                </p>
+                <ul class="space-y-3 text-slate-300 mb-8">
+                    <li class="flex items-center"><span class="text-orange-500 mr-2">▹</span> Modelado Entidad-Relación Complejo.</li>
+                    <li class="flex items-center"><span class="text-orange-500 mr-2">▹</span> Procesamiento de imágenes con Python.</li>
+                    <li class="flex items-center"><span class="text-orange-500 mr-2">▹</span> Optimización de consultas en bases de datos relacionales.</li>
                 </ul>
             </div>
+            <div class="grid grid-cols-2 gap-4" data-aos="fade-left">
+                <div class="glass p-6 rounded-xl border-white/5">
+                    <div class="text-3xl mb-2">💾</div>
+                    <h4 class="font-bold">SQL / NoSQL</h4>
+                    <p class="text-xs text-slate-500">Gestión de datos estructurados y no estructurados.</p>
+                </div>
+                <div class="glass p-6 rounded-xl border-white/5">
+                    <div class="text-3xl mb-2">👁️</div>
+                    <h4 class="font-bold">IA Visión</h4>
+                    <p class="text-xs text-slate-500">Detección de entidades mediante redes neuronales.</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <footer class="py-10 text-center border-t border-slate-800">
-        <p class="text-slate-500">© 2026 AxisCrazy - Desarrollado con pasión y código.</p>
+    <section id="sysadmin" class="py-24 bg-zinc-900/20">
+        <div class="max-w-6xl mx-auto px-8">
+            <h2 class="text-sm font-bold text-orange-500 mb-2 tracking-[0.2em] uppercase" data-aos="fade-right">02. Infrastructure & Cloud Operations</h2>
+            <h3 class="text-4xl font-bold mb-12" data-aos="fade-up">Sistemas y Despliegue</h3>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="glass p-8 rounded-2xl card-hover" data-aos="fade-up" data-aos-delay="100">
+                    <h4 class="text-xl font-bold mb-4">Dell Home Server</h4>
+                    <p class="text-slate-400 text-sm">Administración de **Ubuntu Server** en hardware dedicado (i5 8th Gen), gestionando recursos de CPU, RAM y almacenamiento persistente.</p>
+                </div>
+                <div class="glass p-8 rounded-2xl card-hover" data-aos="fade-up" data-aos-delay="200">
+                    <h4 class="text-xl font-bold mb-4">Containerización</h4>
+                    <p class="text-slate-400 text-sm">Orquestación de microservicios con **Docker Compose**. Implementación de Nginx, Nextcloud y MariaDB en entornos aislados.</p>
+                </div>
+                <div class="glass p-8 rounded-2xl card-hover" data-aos="fade-up" data-aos-delay="300">
+                    <h4 class="text-xl font-bold mb-4">Networking</h4>
+                    <p class="text-slate-400 text-sm">Configuración de redes privadas mediante **Tailscale** y exposición segura de servicios a través de túneles Nginx.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-24 max-w-5xl mx-auto px-8">
+        <div class="glass p-12 rounded-3xl border-orange-500/10 text-center" data-aos="zoom-in">
+            <h2 class="text-3xl font-bold mb-8 italic italic">Stack Tecnológico</h2>
+            <div class="flex flex-wrap justify-center gap-3 text-sm">
+                <span class="bg-zinc-800 px-4 py-2 rounded-lg border border-white/5">Python (Pandas, NumPy)</span>
+                <span class="bg-zinc-800 px-4 py-2 rounded-lg border border-white/5">SQL (MariaDB / PostgreSQL)</span>
+                <span class="bg-zinc-800 px-4 py-2 rounded-lg border border-white/5">NoSQL (MongoDB)</span>
+                <span class="bg-zinc-800 px-4 py-2 rounded-lg border border-white/5">Docker & Containers</span>
+                <span class="bg-zinc-800 px-4 py-2 rounded-lg border border-white/5">Linux SysAdmin</span>
+                <span class="bg-zinc-800 px-4 py-2 rounded-lg border border-white/5">Nginx & Networking</span>
+                <span class="bg-zinc-800 px-4 py-2 rounded-lg border border-white/5">Inglés Conversacional</span>
+            </div>
+            <p class="mt-8 text-slate-500 text-xs uppercase tracking-widest">Educación: CUGDL - Ingeniería en IA y Ciencia de Datos (3er Semestre)</p>
+        </div>
+    </section>
+
+    <footer class="py-12 border-t border-white/5 text-center">
+        <p class="text-slate-600 text-xs tracking-tighter uppercase">Christian Omar Herrera Valdez // 2026 // Christianvher.2k@gmail.com</p>
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init({
-            once: true, // La animación solo ocurre una vez al bajar
-            duration: 800
-        });
+        AOS.init({ duration: 800, once: true });
     </script>
 </body>
 </html>
