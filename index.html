@@ -15,16 +15,16 @@
             background-clip: text; 
             -webkit-text-fill-color: transparent; 
         }
-        section { padding-top: 5rem; padding-bottom: 5rem; border-bottom: 1px solid rgba(255,255,255,0.05); }
+        section { padding: 80px 20px; border-bottom: 1px solid rgba(255,255,255,0.05); }
     </style>
 </head>
 <body>
     <nav class="fixed w-full z-50 glass py-4 px-8 flex justify-between items-center border-b border-white/5">
         <div class="text-xl font-bold tracking-tighter italic">CH <span class="text-orange-500">|</span> <span class="font-light not-italic text-white">Christian Herrera</span></div>
         <div class="hidden md:flex items-center space-x-8 text-xs font-medium uppercase tracking-widest">
-            <a href="#perfil" class="hover:text-orange-400 transition">Perfil</a>
             <a href="#ia" class="hover:text-orange-400 transition">Ingeniería</a>
             <a href="#sysadmin" class="hover:text-orange-400 transition">Sistemas</a>
+            <a href="#academia" class="hover:text-orange-400 transition">Academia</a>
             <div class="flex space-x-2 border-l border-white/20 pl-4 font-bold">
                 <a href="index.html" class="text-orange-500">ES</a>
                 <a href="index_en.html" class="text-slate-500 hover:text-white transition">EN</a>
@@ -32,61 +32,82 @@
         </div>
     </nav>
 
-    <section id="perfil" class="min-h-screen flex flex-col justify-center items-center text-center px-6">
+    <header class="min-h-screen flex flex-col justify-center items-center text-center px-6 pt-20">
         <div class="mb-4 px-4 py-1 border border-orange-500/30 rounded-full text-[10px] text-orange-400 uppercase tracking-[0.3em]">Licenciatura en IA y Ciencia de Datos | CUGDL</div>
-        <h1 class="text-6xl md:text-9xl font-black mb-6 uppercase">CHRISTIAN <span class="accent-text">HERRERA</span></h1>
+        <h1 class="text-5xl md:text-9xl font-black mb-6 uppercase">CHRISTIAN <span class="accent-text">HERRERA</span></h1>
         <p class="text-slate-400 text-lg md:text-xl max-w-3xl leading-relaxed mb-10">
-            Ingeniero en formación enfocado en el **despliegue de pipelines de IA** y la optimización de infraestructura crítica. Experiencia en administración de sistemas Linux y diseño de arquitecturas de datos escalables.
+            Dedicado al diseño de <b>pipelines de datos</b> y gestión de infraestructura. Combinando rigor académico en IA con administración proactiva de sistemas Linux.
         </p>
         <div class="flex flex-wrap justify-center gap-4">
-            <a href="https://www.linkedin.com/in/christian-omar-herrera-valdez-8356031ba" target="_blank" class="bg-orange-600 hover:bg-orange-700 text-white px-8 py-4 rounded-md font-bold transition text-xs shadow-xl shadow-orange-900/20 uppercase tracking-widest text-center">LinkedIn</a>
-            <a href="mailto:christianvher.2k@gmail.com" class="border border-orange-600 text-orange-500 hover:bg-orange-600 hover:text-white px-8 py-4 rounded-md font-bold transition text-xs uppercase tracking-widest text-center">Enviar Email</a>
+            <a href="https://www.linkedin.com/in/christian-omar-herrera-valdez-8356031ba" target="_blank" class="bg-orange-600 hover:bg-orange-700 text-white px-8 py-4 rounded-md font-bold transition text-xs shadow-xl shadow-orange-900/20 uppercase tracking-widest">LinkedIn</a>
+            <a href="mailto:christianvher.2k@gmail.com" class="border border-orange-600 text-orange-500 hover:bg-orange-600 hover:text-white px-8 py-4 rounded-md font-bold transition text-xs uppercase tracking-widest">Email</a>
         </div>
-    </section>
+    </header>
 
-    <section id="ia" class="px-8 max-w-6xl mx-auto">
+    <section id="ia" class="max-w-6xl mx-auto">
         <h2 class="text-sm font-bold text-orange-500 mb-12 uppercase tracking-[0.3em]">01. Data Engineering & AI</h2>
         <div class="grid md:grid-cols-2 gap-16">
             <div>
                 <h3 class="text-5xl font-black mb-6 italic text-white uppercase">BioTracker</h3>
                 <p class="text-slate-400 mb-8 text-justify leading-relaxed">
-                    Sistema de monitoreo científico basado en <b>Computer Vision</b>. Desarrollo de modelos con <b>TensorFlow</b> y <b>Scikit-learn</b> para el procesamiento masivo de datos y su integración en estructuras híbridas SQL/NoSQL.
+                    Sistema de monitoreo científico basado en <b>Computer Vision</b>. Desarrollo de modelos con <b>TensorFlow</b> y <b>Scikit-learn</b> para el procesamiento masivo de datos integrados en arquitecturas SQL/NoSQL.
                 </p>
-                <a href="biotracker.html" class="text-orange-500 font-bold underline italic hover:text-orange-300 transition-all">Ver Documentación Técnica →</a>
+                <a href="biotracker.html" class="text-orange-500 font-bold underline italic hover:text-orange-300">Ver Documentación Técnica →</a>
             </div>
-            <div class="glass p-10 rounded-3xl border-white/5 space-y-6">
-                <h4 class="text-xs font-bold text-slate-500 uppercase tracking-widest">Flujo de Trabajo</h4>
+            <div class="glass p-10 rounded-3xl border-white/5">
+                <h4 class="text-xs font-bold text-slate-500 uppercase tracking-widest mb-4 italic">Pipeline Core</h4>
                 <ul class="text-sm text-slate-400 space-y-4">
-                    <li>• Limpieza y normalización de datasets científicos.</li>
-                    <li>• Inferencia de modelos en entornos productivos.</li>
-                    <li>• Modelado de bases de datos para investigación.</li>
+                    <li>• Normalización de datasets masivos con Pandas.</li>
+                    <li>• Implementación de modelos de detección de fauna.</li>
+                    <li>• Orquestación de flujos de datos híbridos.</li>
                 </ul>
             </div>
         </div>
     </section>
 
-    <section id="sysadmin" class="bg-zinc-900/20 px-8">
+    <section id="sysadmin" class="bg-zinc-900/20">
         <div class="max-w-6xl mx-auto">
-            <h2 class="text-sm font-bold text-orange-500 mb-12 uppercase tracking-[0.3em]">02. Infraestructura & SysAdmin</h2>
-            <div class="grid md:grid-cols-3 gap-8">
+            <h2 class="text-sm font-bold text-orange-500 mb-12 uppercase tracking-[0.3em] text-center">02. Infraestructura & SysAdmin</h2>
+            <div class="grid md:grid-cols-3 gap-8 text-center">
                 <div class="glass p-10 rounded-2xl border-white/5">
-                    <h4 class="font-bold text-orange-400 uppercase text-[10px] mb-4 tracking-widest italic">Ubuntu Server</h4>
-                    <p class="text-slate-400 text-sm">Administración de nodo Dell i5. Gestión de microservicios y optimización de kernel.</p>
+                    <h4 class="font-bold text-orange-400 uppercase text-[10px] mb-4 tracking-widest italic italic">Ubuntu Server</h4>
+                    <p class="text-slate-400 text-sm">Gestión de nodo Dell i5. Administración de microservicios y kernel.</p>
                 </div>
                 <div class="glass p-10 rounded-2xl border-white/5">
-                    <h4 class="font-bold text-orange-400 uppercase text-[10px] mb-4 tracking-widest italic">Docker Ecosystem</h4>
-                    <p class="text-slate-400 text-sm">Orquestación con Docker Compose para despliegue de pipelines de entrenamiento.</p>
+                    <h4 class="font-bold text-orange-400 uppercase text-[10px] mb-4 tracking-widest italic italic">Virtualización</h4>
+                    <p class="text-slate-400 text-sm">Uso de Docker Compose para entornos de entrenamiento portables.</p>
                 </div>
                 <div class="glass p-10 rounded-2xl border-white/5">
-                    <h4 class="font-bold text-orange-400 uppercase text-[10px] mb-4 tracking-widest italic">Resiliencia</h4>
-                    <p class="text-slate-400 text-sm">Arquitectura RAID 5+1 diseñada para integridad ante fallos y respaldo diferencial.</p>
+                    <h4 class="font-bold text-orange-400 uppercase text-[10px] mb-4 tracking-widest italic italic">Resiliencia</h4>
+                    <p class="text-slate-400 text-sm">Diseño de RAID 5+1 y planificación de respaldos diferenciales.</p>
                 </div>
             </div>
-            <div class="mt-12 text-center"><a href="infraestructura.html" class="text-orange-500 font-bold underline italic">Especificaciones Técnicas →</a></div>
+            <div class="mt-12 text-center"><a href="infraestructura.html" class="text-orange-500 font-bold underline italic">Especificaciones de Infraestructura →</a></div>
         </div>
     </section>
 
-    <footer class="py-16 text-center">
+    <section id="academia" class="max-w-6xl mx-auto">
+        <h2 class="text-sm font-bold text-orange-500 mb-12 uppercase tracking-[0.3em] text-center">Fundamentos Académicos</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="glass p-10 rounded-3xl border-white/5">
+                <h4 class="text-white font-bold mb-6 uppercase text-xs">Formación Técnica</h4>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 bg-white/5 rounded border border-white/10 text-[10px] font-bold">ÁLGEBRA LINEAL</span>
+                    <span class="px-3 py-1 bg-white/5 rounded border border-white/10 text-[10px] font-bold">CÁLCULO</span>
+                    <span class="px-3 py-1 bg-white/5 rounded border border-white/10 text-[10px] font-bold">ESTRUCTURA DE DATOS</span>
+                    <span class="px-3 py-1 bg-white/5 rounded border border-white/10 text-[10px] font-bold">SQL / NOSQL</span>
+                </div>
+            </div>
+            <div class="glass p-10 rounded-3xl border-white/5">
+                <h4 class="text-white font-bold mb-6 uppercase text-xs">Idiomas</h4>
+                <p class="text-sm text-slate-400 italic">
+                    <b>Inglés Técnico Comunicativo:</b> Capacidad para comunicación efectiva en entornos de ingeniería, lectura de documentación avanzada y participación en diálogos técnicos.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-16 text-center border-t border-white/5">
         <p class="text-slate-600 text-[10px] tracking-[0.5em] uppercase">Christian Omar Herrera Valdez // CUGDL // 2026</p>
     </footer>
 
