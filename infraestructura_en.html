@@ -1,20 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"><title>Infrastructure EN | Christian Herrera</title>
+    <meta charset="UTF-8"><title>Infrastructure | Christian Herrera</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-[#0a0a0c] text-slate-300 p-10 md:p-24">
+<body class="bg-[#0a0a0c] text-slate-300 p-10 md:p-24 font-sans">
     <a href="index_en.html" class="text-orange-500 font-bold">← Back to Portfolio</a>
-    <h1 class="text-5xl font-black text-white mt-10 mb-8 uppercase">Home-Lab Infrastructure</h1>
+    <h1 class="text-5xl font-black text-white mt-10 mb-8 uppercase">Infrastructure Roadmap</h1>
+    
     <div class="space-y-8">
-        <div class="p-8 border border-white/10 rounded-2xl bg-zinc-900/50">
-            <h2 class="text-xl font-bold mb-4 text-orange-400">On-Premise Node</h2>
-            <p>Managing <b>Ubuntu Server</b> on Dell hardware. Implementing storage solutions and database persistence.</p>
+        <div class="p-10 border border-white/10 rounded-3xl bg-zinc-900/30">
+            <h2 class="text-2xl font-bold text-orange-400 mb-6 italic">High-Availability Architecture</h2>
+            <p class="text-justify text-slate-400 leading-relaxed">
+                Applying architectural principles to local environments. I have architected a <b>RAID 5+1</b> storage solution focused on critical data redundancy. My strategy includes <b>Differential Backups</b> to ensure point-in-time recovery while optimizing system resources.
+            </p>
         </div>
-        <div class="p-8 border border-white/10 rounded-2xl bg-zinc-900/50">
-            <h2 class="text-xl font-bold mb-4 text-orange-400">Docker & Networking</h2>
-            <p>Orchestrating microservices via <b>Docker Compose</b>. Secure remote access through <b>Tailscale</b> VPN mesh.</p>
+        
+        <div class="grid md:grid-cols-2 gap-6">
+            <div class="p-8 border border-white/5 bg-zinc-900 rounded-xl">
+                <h4 class="text-white font-bold mb-2">Self-Taught Management</h4>
+                <p class="text-xs text-slate-500">Proven ability to learn and deploy complex server environments from scratch with zero downtime to date.</p>
+            </div>
+            <div class="p-8 border border-white/5 bg-zinc-900 rounded-xl">
+                <h4 class="text-white font-bold mb-2">Security & Networking</h4>
+                <p class="text-xs text-slate-500">Encryption at rest and mesh VPN (Tailscale) implementation for secure remote operations.</p>
+            </div>
         </div>
     </div>
 </body>
