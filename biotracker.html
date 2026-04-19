@@ -3,33 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Christian Herrera | Lic. en IA y Ciencia de Datos</title>
+    <title>BioTracker Tech | Christian Herrera</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { background-color: #0a0a0c; color: #e2e8f0; font-family: 'Inter', sans-serif; line-height: 1.6; overflow-x: hidden; }
+        .glass { background: rgba(17, 24, 39, 0.9); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255,255,255,0.05); }
+    </style>
 </head>
-<body class="bg-[#0a0a0c] text-slate-300 font-sans leading-relaxed">
-    <nav class="fixed top-0 left-0 w-full z-50 bg-black/80 backdrop-blur-md py-4 px-6 border-b border-white/5 flex justify-between items-center">
-        <a href="index.html" class="text-orange-500 font-bold hover:underline text-xs">← Inicio</a>
+<body class="p-4 md:p-0">
+    <nav class="fixed top-0 left-0 w-full z-50 glass py-4 px-6 md:px-12 flex justify-between items-center">
+        <a href="index.html" class="text-orange-500 font-bold hover:underline italic text-xs md:text-sm">← Volver al Portfolio</a>
         <div class="flex space-x-4 text-[10px] tracking-widest uppercase font-bold">
-            <a href="biotracker.html" class="text-white">ES</a>
-            <a href="biotracker_en.html" class="text-slate-500">EN</a>
+            <a href="biotracker.html" class="text-white underline decoration-orange-500">ES</a>
+            <a href="biotracker_en.html" class="text-slate-500 hover:text-white transition">EN</a>
         </div>
     </nav>
-    <div class="pt-24 px-6 md:px-24 max-w-6xl mx-auto">
-        <h1 class="text-4xl md:text-7xl font-black text-white mb-4 italic uppercase">BIOTRACKER</h1>
-        <p class="text-orange-500 font-bold tracking-[0.4em] mb-12 uppercase text-xs">IA Vision & Arquitectura de Datos</p>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-            <section class="space-y-6">
-                <h2 class="text-xl font-bold text-white border-b border-orange-500/30 pb-2 italic italic">Pipeline Técnico</h2>
-                <p class="text-justify text-slate-400 text-sm italic">Integración de modelos con TensorFlow y Scikit-learn. El proyecto gestiona el flujo desde la captura visual hasta la persistencia híbrida SQL/NoSQL.</p>
+
+    <header class="pt-28 md:pt-32 mb-10 md:mb-16 max-w-6xl mx-auto px-4 md:px-0">
+        <h1 class="text-5xl md:text-8xl font-black text-white mb-4 italic uppercase leading-none text-left">BIOTRACKER</h1>
+        <p class="text-orange-500 font-bold tracking-[0.2em] md:tracking-[0.4em] uppercase text-xs md:text-sm">Ingeniería de IA & Pipelines de Datos</p>
+    </header>
+
+    <main class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 max-w-6xl mx-auto px-4 md:px-0 pb-20">
+        <div class="md:col-span-2 space-y-10 md:space-y-12">
+            <section>
+                <h2 class="text-xl md:text-2xl font-bold text-white mb-6 border-b border-orange-500/30 pb-2 italic">Arquitectura del Proyecto</h2>
+                <p class="text-justify text-slate-400 mb-6 text-sm md:text-base">BioTracker automatiza la identificación de fauna mediante visión artificial. El núcleo técnico reside en la capacidad de procesar flujos de video y convertirlos en metadatos estructurados para investigación científica.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+                    <div class="p-6 bg-zinc-900 rounded-xl border border-white/5">
+                        <h4 class="text-orange-400 font-bold mb-2 uppercase text-[10px] md:text-xs">Visión (Deep Learning)</h4>
+                        <p class="text-[11px] md:text-xs text-slate-500 text-justify">Uso de <b>TensorFlow</b> para el entrenamiento de redes neuronales convolucionales enfocadas en la clasificación de especies.</p>
+                    </div>
+                    <div class="p-6 bg-zinc-900 rounded-xl border border-white/5">
+                        <h4 class="text-orange-400 font-bold mb-2 uppercase text-[10px] md:text-xs">Procesamiento de Datos</h4>
+                        <p class="text-[11px] md:text-xs text-slate-500 text-justify">Implementación de <b>Scikit-learn</b> para la normalización de variables ambientales y limpieza de ruido en el dataset.</p>
+                    </div>
+                </div>
             </section>
-            <div class="p-8 bg-white/5 rounded-2xl border border-white/10 h-fit">
-                <h3 class="text-orange-400 font-bold uppercase text-[10px] mb-4">Stack de Datos</h3>
-                <ul class="text-xs space-y-2 font-mono">
-                    <li>• MariaDB (Relacional)</li>
-                    <li>• NoSQL (Alta Velocidad)</li>
+
+            <section>
+                <h2 class="text-xl md:text-2xl font-bold text-white mb-6 border-b border-orange-500/30 pb-2 italic text-orange-400">Estrategia de Almacenamiento</h2>
+                <p class="text-slate-400 mb-4 text-sm md:text-base">Se implementó una solución híbrida para maximizar la eficiencia:</p>
+                <ul class="space-y-4">
+                    <li class="p-4 bg-white/5 rounded-lg border-l-4 border-orange-500">
+                        <p class="text-[13px] md:text-sm text-slate-300"><b>SQL (MariaDB):</b> Manejo de integridad referencial para taxonomía y registros de avistamientos validados.</p>
+                    </li>
+                    <li class="p-4 bg-white/5 rounded-lg border-l-4 border-orange-500">
+                        <p class="text-[13px] md:text-sm text-slate-300"><b>NoSQL (En proceso):</b> Estructura de logs de alta velocidad para capturas de metadatos temporales y datos no estructurados.</p>
+                    </li>
+                </ul>
+            </section>
+        </div>
+
+        <aside class="space-y-6">
+            <div class="p-8 bg-zinc-900 border border-white/10 rounded-3xl md:sticky md:top-24">
+                <h3 class="text-xs font-bold uppercase tracking-widest mb-6 text-orange-500 underline italic">Ficha Técnica</h3>
+                <ul class="text-[13px] md:text-sm space-y-4">
+                    <li class="flex justify-between border-b border-white/5 pb-2 italic"><span>Entorno</span><span class="text-white">Python 3.x</span></li>
+                    <li class="flex justify-between border-b border-white/5 pb-2 italic"><span>Modelado</span><span class="text-white">TF / SKLearn</span></li>
+                    <li class="flex justify-between border-b border-white/5 pb-2 italic"><span>Data Flow</span><span class="text-white">ETL Pipeline</span></li>
                 </ul>
             </div>
-        </div>
-    </div>
+        </aside>
+    </main>
 </body>
 </html>
