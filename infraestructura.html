@@ -5,23 +5,27 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-[#0a0a0c] text-slate-300 p-10 md:p-24 font-sans leading-relaxed">
-    <nav class="fixed top-0 left-0 w-full z-50 bg-black/50 backdrop-blur-md py-4 px-8 border-b border-white/5 flex justify-between items-center">
-        <a href="index.html" class="text-orange-500 font-bold hover:underline">← Volver al Portfolio</a>
+    <nav class="fixed top-0 left-0 w-full z-50 glass py-4 px-8 border-b border-white/5 flex justify-between items-center backdrop-blur-md">
+        <a href="index.html" class="text-orange-500 font-bold hover:underline italic">← Volver al Portfolio</a>
         <div class="flex space-x-4 text-[10px] tracking-widest uppercase font-bold">
             <a href="infraestructura.html" class="text-white">ES</a>
             <a href="infraestructura_en.html" class="text-slate-500 hover:text-white">EN</a>
         </div>
     </nav>
-    <div class="pt-20">
-        <h1 class="text-5xl font-black text-white mb-8 uppercase italic uppercase">Home-Lab Architecture</h1>
+    <div class="pt-24 max-w-5xl mx-auto">
+        <h1 class="text-6xl font-black text-white mb-10 uppercase italic italic uppercase">Home-Lab Roadmap</h1>
         <div class="grid md:grid-cols-2 gap-10">
-            <div class="p-10 border border-white/10 rounded-3xl bg-zinc-900/30">
-                <h2 class="text-orange-400 font-bold text-xs uppercase mb-4 tracking-widest italic uppercase">Operaciones On-Premise</h2>
-                <p class="text-justify text-slate-400 leading-loose">Ubuntu Server. Microservicios con Docker Compose. Redes VPN mesh.</p>
+            <div class="p-12 border border-white/10 rounded-3xl bg-zinc-900/30 space-y-6">
+                <h2 class="text-orange-400 font-bold text-xs uppercase mb-4 tracking-widest italic underline">Operaciones SysAdmin</h2>
+                <p class="text-justify text-slate-400 leading-loose text-sm">
+                    Administración de <b>Ubuntu Server</b> sobre hardware Dell i5. Implementación de microservicios mediante Docker Compose para asegurar la portabilidad del entorno de IA. Gestión proactiva de redes mesh vía <b>Tailscale</b>.
+                </p>
             </div>
-            <div class="p-10 border border-white/10 rounded-3xl bg-zinc-900/30">
-                <h2 class="text-orange-400 font-bold text-xs uppercase mb-4 tracking-widest italic uppercase">Resiliencia</h2>
-                <p class="text-justify text-slate-400 leading-loose">Diseño RAID 5+1 e integridad de datos críticos.</p>
+            <div class="p-12 border border-white/10 rounded-3xl bg-zinc-900/30 space-y-6">
+                <h2 class="text-orange-400 font-bold text-xs uppercase mb-4 tracking-widest italic underline">Arquitectura de Datos</h2>
+                <p class="text-justify text-slate-400 leading-loose text-sm">
+                    Diseño teórico e implementación de arquitectura <b>RAID 5+1</b> enfocado en la integridad ante fallas de disco. Estrategia de respaldos diferenciales para optimizar almacenamiento y recuperación punto-en-tiempo.
+                </p>
             </div>
         </div>
     </div>
