@@ -4,27 +4,22 @@
     <meta charset="UTF-8"><title>Infrastructure | Christian Herrera</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-[#0a0a0c] text-slate-300 p-10 md:p-24 font-sans">
-    <a href="index_en.html" class="text-orange-500 font-bold">← Back to Portfolio</a>
-    <h1 class="text-5xl font-black text-white mt-10 mb-8 uppercase">Infrastructure Roadmap</h1>
+<body class="bg-[#0a0a0c] text-slate-300 p-10 md:p-24 font-sans leading-relaxed">
+    <a href="index_en.html" class="text-orange-500 font-bold mb-12 inline-block hover:underline">← Back to Portfolio</a>
+    <h1 class="text-5xl font-black text-white mb-10 uppercase italic">Infrastructure Strategy</h1>
     
-    <div class="space-y-8">
-        <div class="p-10 border border-white/10 rounded-3xl bg-zinc-900/30">
-            <h2 class="text-2xl font-bold text-orange-400 mb-6 italic">High-Availability Architecture</h2>
-            <p class="text-justify text-slate-400 leading-relaxed">
-                Applying architectural principles to local environments. I have architected a <b>RAID 5+1</b> storage solution focused on critical data redundancy. My strategy includes <b>Differential Backups</b> to ensure point-in-time recovery while optimizing system resources.
+    <div class="grid md:grid-cols-2 gap-10">
+        <div class="p-10 border border-white/10 rounded-3xl bg-zinc-900/30 space-y-6">
+            <h2 class="text-2xl font-bold text-orange-400 uppercase tracking-widest text-xs">On-Premise Ops</h2>
+            <p class="text-justify leading-loose text-slate-400">
+                Managing <b>Ubuntu Server</b> nodes. Deploying production-ready microservices using <b>Docker Compose</b> and secure mesh VPN (Tailscale) for remote operations.
             </p>
         </div>
-        
-        <div class="grid md:grid-cols-2 gap-6">
-            <div class="p-8 border border-white/5 bg-zinc-900 rounded-xl">
-                <h4 class="text-white font-bold mb-2">Self-Taught Management</h4>
-                <p class="text-xs text-slate-500">Proven ability to learn and deploy complex server environments from scratch with zero downtime to date.</p>
-            </div>
-            <div class="p-8 border border-white/5 bg-zinc-900 rounded-xl">
-                <h4 class="text-white font-bold mb-2">Security & Networking</h4>
-                <p class="text-xs text-slate-500">Encryption at rest and mesh VPN (Tailscale) implementation for secure remote operations.</p>
-            </div>
+        <div class="p-10 border border-white/10 rounded-3xl bg-zinc-900/30 space-y-6">
+            <h2 class="text-2xl font-bold text-orange-400 uppercase tracking-widest text-xs">Data Resiliency</h2>
+            <p class="text-justify leading-loose text-slate-400">
+                Architecture design for <b>RAID 5+1</b> storage nodes. Implementing differential backup protocols to ensure high availability and point-in-time recovery.
+            </p>
         </div>
     </div>
 </body>

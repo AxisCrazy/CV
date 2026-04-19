@@ -3,13 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Christian Herrera | IA & Data Science Engineer</title>
+    <title>Christian Herrera | AI & Data Science Engineer</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
         body { background-color: #0a0a0c; color: #e2e8f0; scroll-behavior: smooth; font-family: 'Inter', sans-serif; }
         .glass { background: rgba(17, 24, 39, 0.8); backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.05); }
-        .accent-text { background: linear-gradient(90deg, #f97316, #fbbf24); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .accent-text { 
+            background: linear-gradient(90deg, #f97316, #fbbf24); 
+            -webkit-background-clip: text; 
+            background-clip: text; 
+            -webkit-text-fill-color: transparent; 
+        }
     </style>
 </head>
 <body>
@@ -18,6 +23,7 @@
         <div class="hidden md:flex items-center space-x-8 text-xs font-medium uppercase tracking-widest">
             <a href="#ia" class="hover:text-orange-400 transition">Ingeniería</a>
             <a href="#sysadmin" class="hover:text-orange-400 transition">Sistemas</a>
+            <a href="#academia" class="hover:text-orange-400 transition">Academia</a>
             <div class="flex space-x-2 border-l border-white/20 pl-4">
                 <a href="index.html" class="text-orange-500 font-bold">ES</a>
                 <a href="index_en.html" class="text-slate-500 hover:text-white transition">EN</a>
@@ -25,10 +31,10 @@
         </div>
     </nav>
 
-    <section class="h-screen flex flex-col justify-center items-center text-center px-6">
+    <section class="min-h-screen flex flex-col justify-center items-center text-center px-6 pt-20">
         <div class="mb-4 px-4 py-1 border border-orange-500/30 rounded-full text-[10px] text-orange-400 uppercase tracking-[0.3em]" data-aos="fade-down">Licenciatura en IA y Ciencia de Datos | CUGDL</div>
-        <h1 class="text-6xl md:text-8xl font-black mb-6 uppercase" data-aos="zoom-out">CHRISTIAN <span class="accent-text">HERRERA</span></h1>
-        <p class="text-slate-400 text-lg max-w-2xl leading-relaxed" data-aos="fade-up" data-aos-delay="400">
+        <h1 class="text-5xl md:text-8xl font-black mb-6 uppercase" data-aos="zoom-out">CHRISTIAN <span class="accent-text">HERRERA</span></h1>
+        <p class="text-slate-400 text-lg md:text-xl max-w-2xl leading-relaxed" data-aos="fade-up" data-aos-delay="400">
             Dedicado al diseño de <b>pipelines de datos</b> y la gestión de infraestructura escalable. Combinando rigor académico con administración de sistemas autogestionada.
         </p>
         <div class="mt-12" data-aos="fade-up" data-aos-delay="600">
@@ -39,47 +45,49 @@
     <section id="ia" class="py-24 px-8 max-w-6xl mx-auto border-t border-white/5">
         <div class="grid md:grid-cols-2 gap-12">
             <div data-aos="fade-right">
-                <h2 class="text-sm font-bold text-orange-500 mb-2 uppercase tracking-widest">01. Ingeniería de Datos</h2>
+                <h2 class="text-sm font-bold text-orange-500 mb-2 uppercase tracking-widest">01. Ingeniería de Datos & ML</h2>
                 <h3 class="text-4xl font-bold mb-6 italic text-white">BioTracker</h3>
-                <p class="text-slate-400 mb-8 text-justify">
-                    Desarrollo de modelos de detección con <b>TensorFlow</b> y <b>Scikit-learn</b>. Enfocado en la transición de datos crudos hacia arquitecturas <b>SQL/NoSQL</b> optimizadas para el análisis biológico.
+                <p class="text-slate-400 mb-8 text-justify leading-relaxed">
+                    Desarrollo de modelos de detección de fauna utilizando <b>TensorFlow</b> y <b>Scikit-learn</b>. Enfocado en la transición de datos crudos a estructuras relacionales y no relacionales optimizadas para el análisis científico.
                 </p>
-                <a href="biotracker.html" class="text-orange-500 font-bold underline hover:text-orange-300 transition-all">Ver documentación técnica completa →</a>
+                <a href="biotracker.html" class="text-orange-500 font-bold underline hover:text-orange-300 transition-all italic">Detalles de Arquitectura de IA →</a>
             </div>
-            <div class="glass p-10 rounded-3xl border-white/5 space-y-4" data-aos="fade-left">
-                <h4 class="text-xs font-bold text-slate-500 uppercase tracking-[0.2em]">Stack Académico</h4>
-                <div class="flex flex-wrap gap-2">
-                    <span class="bg-white/5 px-3 py-1 rounded border border-white/10 text-[10px]">Álgebra Lineal</span>
-                    <span class="bg-white/5 px-3 py-1 rounded border border-white/10 text-[10px]">Cálculo</span>
-                    <span class="bg-white/5 px-3 py-1 rounded border border-white/10 text-[10px]">Estructuras de Datos</span>
-                </div>
+            <div class="glass p-10 rounded-3xl border-white/5 space-y-6" data-aos="fade-left">
+                <h4 class="text-xs font-bold text-slate-500 uppercase tracking-[0.2em]">Enfoque en Datos</h4>
+                <ul class="space-y-4 text-sm text-slate-400">
+                    <li>• Normalización de datos masivos.</li>
+                    <li>• Integración de modelos de visión (CV).</li>
+                    <li>• Gestión de flujos SQL/NoSQL híbridos.</li>
+                </ul>
             </div>
         </div>
     </section>
 
     <section id="sysadmin" class="py-24 bg-zinc-900/20 px-8 border-t border-white/5">
-        <div class="max-w-6xl mx-auto text-center">
-            <h2 class="text-sm font-bold text-orange-500 mb-12 uppercase tracking-widest">02. Sistemas e Infraestructura</h2>
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-sm font-bold text-orange-500 mb-12 uppercase tracking-widest text-center">02. Infraestructura On-Premise</h2>
             <div class="grid md:grid-cols-3 gap-8">
                 <div class="glass p-8 rounded-2xl border-white/5" data-aos="fade-up">
-                    <h4 class="font-bold text-orange-400 text-xs mb-4 uppercase">Home-Lab</h4>
-                    <p class="text-slate-400 text-sm">Ubuntu Server en nodo Dell i5. Gestión de microservicios y persistencia de datos.</p>
+                    <h4 class="font-bold text-orange-400 uppercase text-xs mb-4 tracking-widest">Ubuntu Server</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">Administración proactiva de hardware Dell i5. Gestión de logs y optimización de microservicios.</p>
                 </div>
                 <div class="glass p-8 rounded-2xl border-white/5" data-aos="fade-up" data-aos-delay="200">
-                    <h4 class="font-bold text-orange-400 text-xs mb-4 uppercase">Contenedores</h4>
-                    <p class="text-slate-400 text-sm">Orquestación con Docker Compose para despliegue rápido de entornos de IA.</p>
+                    <h4 class="font-bold text-orange-400 uppercase text-xs mb-4 tracking-widest">Escalabilidad</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">Orquestación con <b>Docker Compose</b> para garantizar la portabilidad de entornos de IA.</p>
                 </div>
                 <div class="glass p-8 rounded-2xl border-white/5" data-aos="fade-up" data-aos-delay="400">
-                    <h4 class="font-bold text-orange-400 text-xs mb-4 uppercase">Seguridad</h4>
-                    <p class="text-slate-400 text-sm">Redes VPN mesh vía Tailscale y diseño preventivo de RAID 5+1.</p>
+                    <h4 class="font-bold text-orange-400 uppercase text-xs mb-4 tracking-widest">Integridad</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">Diseño preventivo de <b>RAID 5+1</b> y estrategias de respaldo diferencial.</p>
                 </div>
             </div>
-            <a href="infraestructura.html" class="mt-12 inline-block text-orange-500 font-bold underline">Detalles de Arquitectura On-Premise →</a>
+            <div class="mt-16 text-center">
+                <a href="infraestructura.html" class="text-orange-500 font-bold underline italic">Especificaciones de Infraestructura →</a>
+            </div>
         </div>
     </section>
 
-    <footer class="py-12 border-t border-white/5 text-center text-slate-600 text-[10px] uppercase tracking-[0.5em]">
-        Christian Omar Herrera Valdez // CUGDL // 2026
+    <footer class="py-12 border-t border-white/5 text-center">
+        <p class="text-slate-600 text-[10px] tracking-[0.5em] uppercase">Christian Omar Herrera Valdez // 2026 // CUGDL</p>
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

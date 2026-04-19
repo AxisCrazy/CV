@@ -4,22 +4,21 @@
     <meta charset="UTF-8"><title>Infraestructura | Christian Herrera</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-[#0a0a0c] text-slate-300 p-10 md:p-24 font-sans">
-    <a href="index.html" class="text-orange-500 font-bold mb-10 inline-block">← Volver al Portfolio</a>
-    <h1 class="text-6xl font-black text-white mb-8 uppercase italic">Home-Lab Architecture</h1>
+<body class="bg-[#0a0a0c] text-slate-300 p-10 md:p-24 font-sans leading-relaxed">
+    <a href="index.html" class="text-orange-500 font-bold mb-12 inline-block hover:underline">← Volver al Portfolio</a>
+    <h1 class="text-5xl font-black text-white mb-10 uppercase italic">Home-Lab Architecture</h1>
     
     <div class="grid md:grid-cols-2 gap-10">
         <div class="p-10 border border-white/10 rounded-3xl bg-zinc-900/30 space-y-6">
-            <h2 class="text-2xl font-bold text-orange-400 uppercase tracking-widest text-xs">Administración de Sistemas</h2>
-            <p class="text-justify leading-relaxed">
-                Administración de <b>Ubuntu Server</b> sobre hardware dedicado (Intel i5 8th Gen). Mi enfoque principal es la <b>disponibilidad crítica</b>: utilizo Docker Compose para orquestar microservicios que soportan mis experimentos de IA y almacenamiento persistente vía Samba.
+            <h2 class="text-2xl font-bold text-orange-400 uppercase tracking-widest text-xs">Visión SysAdmin</h2>
+            <p class="text-justify leading-loose text-slate-400">
+                Administración de <b>Ubuntu Server</b> en nodo Dell i5. Implementación de microservicios aislados vía <b>Docker Compose</b> y redes seguras con <b>Tailscale</b> para gestión remota.
             </p>
         </div>
-        
         <div class="p-10 border border-white/10 rounded-3xl bg-zinc-900/30 space-y-6">
-            <h2 class="text-2xl font-bold text-orange-400 uppercase tracking-widest text-xs">Visión de Continuidad</h2>
-            <p class="text-justify leading-relaxed">
-                Diseño de arquitectura de almacenamiento basado en <b>RAID 5+1</b> para garantizar integridad ante fallos de disco. Implementación de respaldos diferenciales y acceso remoto seguro mediante redes VPN mesh (Tailscale).
+            <h2 class="text-2xl font-bold text-orange-400 uppercase tracking-widest text-xs">Continuidad de Datos</h2>
+            <p class="text-justify leading-loose text-slate-400">
+                Diseño preventivo basado en <b>RAID 5+1</b> enfocado en la integridad de datos críticos. Estrategia de respaldos diferenciales para optimización de recursos y recuperación ante fallos.
             </p>
         </div>
     </div>
