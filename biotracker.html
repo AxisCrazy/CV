@@ -1,36 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BioTracker | Christian Herrera</title>
+    <meta charset="UTF-8"><title>BioTracker | Christian Herrera</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        body { background-color: #0a0a0c; color: #e2e8f0; font-family: 'Inter', sans-serif; }
-        .tech-card { background: #111827; border: 1px solid #374151; padding: 2rem; border-radius: 1rem; }
-    </style>
 </head>
-<body class="p-8 md:p-20">
-    <a href="index.html" class="text-orange-500 hover:text-orange-400 mb-8 inline-block font-bold">← Volver al Portfolio</a>
-    <header class="mb-16">
-        <h1 class="text-5xl font-black mb-4 uppercase">BioTracker</h1>
-        <p class="text-orange-500 uppercase tracking-widest font-bold">Fase: Diseño e Integración de Datos</p>
-    </header>
-    <main class="grid md:grid-cols-3 gap-12">
-        <div class="md:col-span-2 space-y-8 text-justify">
-            <h2 class="text-2xl font-bold border-b border-orange-500 pb-2">Descripción del Proyecto</h2>
-            <p class="text-slate-400 leading-relaxed">BioTracker nace como una solución a la necesidad de monitorear fauna en tiempo real. Utilizando modelos de visión por computadora, el sistema identifica especies y genera registros automáticos.</p>
-            <h2 class="text-2xl font-bold border-b border-orange-500 pb-2">Reto en Bases de Datos</h2>
-            <p class="text-slate-400">Actualmente trabajo en la arquitectura híbrida: usando <b>SQL</b> para la consistencia de catálogos taxonómicos y <b>NoSQL</b> para la alta velocidad de ingesta de detecciones visuales.</p>
+<body class="bg-[#0a0a0c] text-slate-300 p-10 md:p-24">
+    <a href="index.html" class="text-orange-500 font-bold">← Volver al Portfolio</a>
+    <h1 class="text-5xl font-black text-white mt-10 mb-4">BIOTRACKER</h1>
+    <p class="text-orange-500 font-bold tracking-widest mb-10 uppercase">Fase: Diseño e Integración de Datos</p>
+    <div class="grid md:grid-cols-2 gap-10">
+        <div>
+            <h2 class="text-xl font-bold text-white mb-4">Arquitectura Híbrida</h2>
+            <p class="text-justify mb-4">Para BioTracker, he diseñado un esquema donde <b>SQL</b> asegura la integridad de catálogos biológicos y <b>NoSQL</b> gestiona la alta velocidad de ingesta de detecciones por Computer Vision.</p>
         </div>
-        <div class="tech-card h-fit">
-            <h3 class="text-orange-400 font-bold uppercase text-xs mb-4">Stack Técnico</h3>
+        <div class="bg-zinc-900 p-8 rounded-xl border border-white/10">
+            <h3 class="text-orange-400 font-bold mb-4">Stack de Datos</h3>
             <ul class="text-sm space-y-2">
-                <li>• Python (OpenCV)</li>
-                <li>• MariaDB / NoSQL (Modeling)</li>
-                <li>• Data Normalization</li>
+                <li>• MariaDB (Relational)</li>
+                <li>• NoSQL (High Speed Logging)</li>
+                <li>• Python OpenCV Integration</li>
             </ul>
         </div>
-    </main>
+    </div>
 </body>
 </html>
