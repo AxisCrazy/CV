@@ -3,26 +3,30 @@
 <head>
     <meta charset="UTF-8"><title>Infraestructura | Christian Herrera</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>body { background-color: #0a0a0c; color: #e2e8f0; font-family: 'Inter', sans-serif; line-height: 1.6; }</style>
 </head>
-<body class="bg-[#0a0a0c] text-slate-300 p-10 md:p-24 font-sans leading-relaxed">
-    <nav class="fixed top-0 left-0 w-full z-50 glass py-4 px-8 border-b border-white/5 flex justify-between items-center backdrop-blur-md">
+<body class="p-6 md:p-20">
+    <nav class="fixed top-0 left-0 w-full z-50 bg-black/50 backdrop-blur-md py-4 px-8 border-b border-white/5 flex justify-between items-center">
         <a href="index.html" class="text-orange-500 font-bold hover:underline italic">← Volver al Portfolio</a>
         <div class="flex space-x-4 text-[10px] tracking-widest uppercase font-bold">
             <a href="infraestructura.html" class="text-white">ES</a>
             <a href="infraestructura_en.html" class="text-slate-500 hover:text-white">EN</a>
         </div>
     </nav>
-    <div class="pt-24 max-w-5xl mx-auto">
-        <h1 class="text-6xl font-black text-white mb-10 uppercase italic italic">Home-Lab Roadmap</h1>
-        <div class="grid md:grid-cols-2 gap-10">
-            <div class="p-10 border border-white/10 rounded-3xl bg-zinc-900/30 space-y-6">
-                <h2 class="text-orange-400 font-bold text-xs uppercase mb-4 tracking-widest italic underline underline italic">Sistemas</h2>
-                <p class="text-justify text-slate-400 leading-loose text-sm">Administración de Ubuntu Server. Despliegue de microservicios con Docker Compose. Redes privadas mediante Tailscale.</p>
-            </div>
-            <div class="p-10 border border-white/10 rounded-3xl bg-zinc-900/30 space-y-6">
-                <h2 class="text-orange-400 font-bold text-xs uppercase mb-4 tracking-widest italic underline underline italic">Resiliencia</h2>
-                <p class="text-justify text-slate-400 leading-loose text-sm">Diseño de RAID 5+1 proactivo y estrategia de respaldo diferencial para protección de datos críticos.</p>
-            </div>
+
+    <header class="pt-24 mb-16 max-w-6xl mx-auto">
+        <h1 class="text-6xl md:text-8xl font-black text-white mb-4 italic uppercase">HOME-LAB</h1>
+        <p class="text-orange-500 font-bold tracking-[0.4em] uppercase text-sm">Arquitectura de Servidores & Alta Disponibilidad</p>
+    </header>
+
+    <div class="grid md:grid-cols-2 gap-10 max-w-6xl mx-auto">
+        <div class="p-10 border border-white/10 rounded-3xl bg-zinc-900/30">
+            <h2 class="text-orange-400 font-bold text-xs uppercase mb-6 tracking-widest italic underline">Sistemas Operativos</h2>
+            <p class="text-justify text-slate-400 leading-loose">Administración de un nodo central basado en <b>Ubuntu Server</b> sobre hardware Dell (Intel i5 8th Gen). Implementación de orquestación de microservicios mediante <b>Docker Compose</b>, optimizando la portabilidad de entornos de IA y bases de datos persistentes.</p>
+        </div>
+        <div class="p-10 border border-white/10 rounded-3xl bg-zinc-900/30">
+            <h2 class="text-orange-400 font-bold text-xs uppercase mb-6 tracking-widest italic underline">Continuidad de Negocio</h2>
+            <p class="text-justify text-slate-400 leading-loose">Diseño de arquitectura de almacenamiento <b>RAID 5+1</b>, priorizando la integridad de datos ante fallos de hardware. Implementación de una estrategia de <b>respaldos diferenciales</b> proactiva y redes VPN seguras mediante Tailscale.</p>
         </div>
     </div>
 </body>
