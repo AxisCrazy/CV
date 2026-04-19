@@ -13,12 +13,13 @@
         section { padding: 60px 20px; }
         @media (min-width: 768px) { section { padding: 100px 40px; } }
         .mobile-menu-active { overflow: hidden; }
+        .nav-link-mobile { padding: 1rem; width: 100%; text-align: center; border-bottom: 1px solid rgba(255,255,255,0.05); }
     </style>
 </head>
 <body>
     <nav class="fixed w-full z-50 glass py-4 px-6 md:px-12 flex justify-between items-center">
         <div class="text-lg md:text-xl font-bold tracking-tighter italic text-white">CH <span class="text-orange-500">|</span> <span class="font-light not-italic">Christian Herrera</span></div>
-        
+
         <div class="hidden md:flex items-center space-x-6 text-[10px] font-bold uppercase tracking-widest">
             <a href="#profile" class="hover:text-orange-400 transition">Profile</a>
             <a href="#engineering" class="hover:text-orange-400 transition">Engineering</a>
@@ -41,12 +42,12 @@
         </div>
     </nav>
 
-    <div id="mobile-menu" class="fixed inset-0 z-[60] bg-black/98 transform translate-x-full transition-transform duration-300 flex flex-col items-center justify-center space-y-8 text-xl font-bold uppercase tracking-widest">
+    <div id="mobile-menu" class="fixed inset-0 z-[60] bg-[#0a0a0c] transform translate-x-full transition-transform duration-300 flex flex-col items-center justify-center space-y-4 text-xl font-bold uppercase tracking-widest">
         <button id="close-btn" class="absolute top-6 right-8 text-orange-500 text-4xl">&times;</button>
-        <a href="#profile" class="nav-link-mobile">Profile</a>
-        <a href="#engineering" class="nav-link-mobile">Engineering</a>
-        <a href="#software" class="nav-link-mobile">Software</a>
-        <a href="#infra" class="nav-link-mobile">Infrastructure</a>
+        <a href="#profile" class="nav-link-mobile text-white">Profile</a>
+        <a href="#engineering" class="nav-link-mobile text-white">Engineering</a>
+        <a href="#software" class="nav-link-mobile text-white">Software</a>
+        <a href="#infra" class="nav-link-mobile text-white">Infrastructure</a>
     </div>
 
     <header id="profile" class="min-h-screen flex flex-col justify-center items-center text-center px-6 pt-24">
